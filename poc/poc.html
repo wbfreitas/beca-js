@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poc</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <style>
+        .table i,
+        thead th {
+            cursor: pointer;
+        }
+        
+        tbody tr:first-child {
+            display: none;
+        }
+        
+        tbody tr:nth-child(2) td .pracima {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        tbody tr:last-child td .prabaixo {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <section>
+            <form id="form" act="#">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" placeholder="nome" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="sobrenome">sobrenome</label>
+                        <input type="text" class="form-control" name="sobrenome" placeholder="sobrenome" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="peso">peso</label>
+                        <input type="text" class="form-control" name="peso" placeholder="peso" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="altura">altura</label>
+                        <input type="text" class="form-control" name="altura" placeholder="altura" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th data-sort="id" scope="col" class="desc">Id</th>
+                    <th data-sort="nome" scope="col">Nome</th>
+                    <th data-sort="sobrenome" scope="col">Sobrenome</th>
+                    <th data-sort="peso" scope="col">Peso</th>
+                    <th data-sort="altura" scope="col">Altura</th>
+                    <th data-sort="imc" scope="col">IMC</th>
+                    <th scope="col">Pra cima</th>
+                    <th scope="col">Pra baixo</th>
+                    <th scope="col">Deletar</th>
+                    <th scope="col">edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th data-name="id" scope="row"></th>
+                    <td data-name="nome">Wellington</td>
+                    <td data-name="sobrenome">Barros Freitas</td>
+                    <td data-name="peso">83</td>
+                    <td data-name="altura">1.80</td>
+                    <td data-name="imc">?</td>
+                    <td><i title="vamos Para cima" class="fas fa-sort-up pracima"></i></td>
+                    <td><i title="vamos para baixo" class="fas fa-sort-down prabaixo"></i></td>
+                    <td><i title="Excluir" class="fas fa-trash-alt delete"></i></td>
+                    <td><i title="vamos para baixo" class="far fa-edit"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal" tabindex="-1" role="dialog" id="modal-edit">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/beca.js"></script>
+    <script src="./poc.js"></script>
+</body>
+
+</html>

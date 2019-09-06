@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seletores</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <section id="last-child" class="col-md-6 box">
+                <h2>:last-child</h2>
+                <p>A propriedade lastChild retorna o último nó filho do nó especificado, como um objeto Node.</p>
+                <div>
+                    <h3>elementos</h3>
+                    <ul>
+                        <li class="saladas">Pera</li>
+                        <li class="saladas">Uva</li>
+                        <li class="saladas">Maçã</li>
+                        <li class="saladas">salada mista - precisamos selecionar essa aqui</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="last-of-type" class="col-md-6 box">
+                <h2>:last-of-type</h2>
+                <p>
+                    O seletor: last-of-type seleciona todos os elementos que são o último filho, de um tipo específico, de seu pai.
+                </p>
+                <div>
+                    <h3>elementos</h3>
+                    <p>O primeiro paragrafo do bloco</p>
+
+                    <div>
+                        <p>primeiro paragrafo da div</p>
+                        <p>Ultimo paragrafo da div</p>
+                    </div><br>
+
+                    <div>
+                        <p>primeiro paragrafo de outra div.</p>
+                        <p>ultimo paragrafo da outra div.</p>
+                        <span>Um span perdido na div</span>
+                    </div>
+
+                    <p>Ultimo paragrafo do bloco</p>
+
+                </div>
+            </section>
+            <section id="only-of-type" class="col-md-6 box">
+                <h2>:only-of-type</h2>
+                <p>
+                    O seletor: last-of-type seleciona todos os elementos que são o último filho, de um tipo específico, de seu pai.
+                </p>
+                <div>
+                    <h3>elementos</h3>
+                    <div>
+                        <p>Um paragafo dentro de uma div</p>
+                    </div>
+
+                    <div>
+                        <p>primeiro paragrafo da div</p>
+                        <p>segundo paragrafo da div</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" data-modal="beca">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/beca.js"></script>
+    <script src="./selectores.js"></script>
+</body>
+
+</html>
